@@ -11,13 +11,21 @@ import { PageHeaderPink } from './components/PageHeaders';
 import IndexScreen from './screens/indexscreen';
 import LoginScreen from './screens/loginscreen';
 import KeyboardAvoidingComponent from './screens/keyboardavoidscreen';
+import { LocationEnableScreen } from './screens/registration/locationenablescreen';
+import { NotificationEnableScreen } from './screens/registration/notificationenablescreen';
+import { RegistrationStartScreen } from './screens/registration/registrationstartscreen';
+import { MobileRegistrationScreen } from './screens/registration/mobilenumberscreen';
+import { MobileRegistrationVerificationScreen } from './screens/registration/mobilenumberverificationscreen';
+import { EmailRegistrationScreen } from './screens/registration/emailscreen';
+import { EmailRegistrationVerificationScreen } from './screens/registration/emailverificationscreen';
 //import * as SplashScreen from 'expo-splash-screen';
 
 export default function App() {
   const [fontsLoaded, fontError] = useFonts({
     'Poppins-Regular': require('./assets/fonts/Poppins-Regular.ttf'),
     'Poppins-Bold': require('./assets/fonts/Poppins-Bold.ttf'),
-    'Poppins-Italic': require('./assets/fonts/Poppins-Italic.ttf')
+    'Poppins-SemiBold': require('./assets/fonts/Poppins-SemiBold.ttf'),
+    'Poppins-Italic': require('./assets/fonts/Poppins-Italic.ttf'),
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -32,7 +40,7 @@ export default function App() {
 
   return (
     <GluestackUIProvider config={config} onLayoutRootView={onLayoutRootView}>
-        <LoginScreen />
+        <MobileRegistrationScreen />
     </GluestackUIProvider>
   );
 }

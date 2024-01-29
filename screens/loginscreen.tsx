@@ -21,7 +21,7 @@ const LoginScreen = () => {
 
     return (
         <SafeAreaView>
-            <LinearGradient start={[0.6, 0.3]} end={[0.5, 0.9]} locations={[0, 0.9]} colors={['#ffb9c6', 'rgba(255, 255, 255, 0)']} >
+            <LinearGradient start={[0.6, 0.5]} end={[0.5, 1]} locations={[0, 0.7]} colors={['#ffb9c6', 'rgba(255, 255, 255, 0)']} >
                 <KeyboardAvoidingView
                     behavior={Platform.OS === "ios" ? "padding" : "height"}>
                     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
