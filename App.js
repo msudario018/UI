@@ -40,7 +40,7 @@ export default function App() {
 
   return (
     <GluestackUIProvider config={config} onLayoutRootView={onLayoutRootView}>
-        <EmailRegistrationVerificationScreen />
+        <RegistrationStartScreen />
     </GluestackUIProvider>
   );
 }
