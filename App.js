@@ -13,11 +13,15 @@ import LoginScreen from './screens/loginscreen';
 import KeyboardAvoidingComponent from './screens/keyboardavoidscreen';
 import { LocationEnableScreen } from './screens/registration/locationenablescreen';
 import { NotificationEnableScreen } from './screens/registration/notificationenablescreen';
-import { RegistrationStartScreen } from './screens/registration/registrationstartscreen';
 import { MobileRegistrationScreen } from './screens/registration/mobilenumberscreen';
 import { MobileRegistrationVerificationScreen } from './screens/registration/mobilenumberverificationscreen';
 import { EmailRegistrationScreen } from './screens/registration/emailscreen';
 import { EmailRegistrationVerificationScreen } from './screens/registration/emailverificationscreen';
+import { RegistrationStartScreen } from './screens/registration/registrationstartscreen';
+import { WelcomeScreenPal } from './screens/welcomescreenpal';
+import { WelcomeScreenPinay } from './screens/welcomescreenpinay';
+import { FullNameScreen } from './screens/fullnamescreen';
+import { BirthDateScreen } from './screens/birthdatescreen';
 //import * as SplashScreen from 'expo-splash-screen';
 
 export default function App() {
@@ -40,7 +44,7 @@ export default function App() {
 
   return (
     <GluestackUIProvider config={config} onLayoutRootView={onLayoutRootView}>
-        <RegistrationStartScreen />
+        <FullNameScreen/>
     </GluestackUIProvider>
   );
 }
