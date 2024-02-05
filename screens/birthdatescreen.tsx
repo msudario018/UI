@@ -19,7 +19,6 @@ export const BirthDateScreen = () => {
                                 <ProgressFilledTrack bg="#EF5DA8" h={8} />
                             </Progress>
                             <Box flex={1} mt={verticalScale(50)} borderWidth={"$0"} >
-
                                 <Text textAlign="left" w={"100%"} >
                                     <Text lineHeight={verticalScale(46)} fontSize={32} fontFamily='Poppins-SemiBold' color="#000000" >Your Birthdate? </Text>
                                 </Text>
