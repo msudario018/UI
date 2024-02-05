@@ -18,6 +18,7 @@ import { MobileRegistrationScreen } from './screens/registration/mobilenumberscr
 import { MobileRegistrationVerificationScreen } from './screens/registration/mobilenumberverificationscreen';
 import { EmailRegistrationScreen } from './screens/registration/emailscreen';
 import { EmailRegistrationVerificationScreen } from './screens/registration/emailverificationscreen';
+import { ConfirmationModal } from './components/ConfirmationModals';
 //import * as SplashScreen from 'expo-splash-screen';
 
 export default function App() {
