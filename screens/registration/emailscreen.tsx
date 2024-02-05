@@ -45,7 +45,7 @@ export const EmailRegistrationScreen = () => {
 
 const styles = StyleSheet.create({
     InputBoxStyle: {
-        shadowColor: "rgba(245, 130, 41, 0.16)",
+        shadowColor: "rgba(245, 130, 67, 0.16)",
         shadowOffset: {
             width: 0,
             height: 4

@@ -36,3 +36,18 @@ export const PinayPalLogoPink = () => {
     );
 };
 
+export const PalGuyPic = () => {
+    return (
+        <Image alt="PalIcon-guy" w={horizontalScale(277)} h={verticalScale(256)}
+            source={require('../assets/icons/palguypic.png')} />
+    );
+};
+
+export const PalGirlPic = () => {
+    return (
+        <Image alt="PalIcon-girl" w={horizontalScale(277)} h={verticalScale(256)}
+            source={require('../assets/icons/palgirlpic.png')} />
+    );
+};
+
+
