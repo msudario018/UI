@@ -50,4 +50,11 @@ export const PalGirlPic = () => {
     );
 };
 
+export const PinayPalPic = () => {
+    return (
+        <Image alt="PalIcon-girl" w={horizontalScale(375)} h={verticalScale(350)}
+            source={require('../assets/icons/pinaypalpic.png')} />
+    );
+};
+
 
