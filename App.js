@@ -25,6 +25,7 @@ import { FullNameScreen } from './screens/fullnamescreen';
 import { BirthDateScreen } from './screens/birthdatescreen';
 import { AboutYourselfScreen } from './screens/aboutyourselfscreen';
 import { RegistrationNavigationFlowScreen } from './screens/registration/registrationnavigationscreen';
+import { NoticeScreen } from './screens/Questionaire/notice';
 //import * as SplashScreen from 'expo-splash-screen';
 
 export default function App() {
