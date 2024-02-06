@@ -23,6 +23,7 @@ import { WelcomeScreenPinay } from './screens/welcomescreenpinay';
 import { FullNameScreen } from './screens/fullnamescreen';
 import { BirthDateScreen } from './screens/birthdatescreen';
 import { AboutYourselfScreen } from './screens/aboutyourselfscreen';
+import { NoticeScreen } from './screens/Questionaire/notice';
 //import * as SplashScreen from 'expo-splash-screen';
 
 export default function App() {
