@@ -25,7 +25,24 @@ import { FullNameScreen } from './screens/fullnamescreen';
 import { BirthDateScreen } from './screens/birthdatescreen';
 import { AboutYourselfScreen } from './screens/aboutyourselfscreen';
 import { RegistrationNavigationFlowScreen } from './screens/registration/registrationnavigationscreen';
-import { NoticeScreen } from './screens/Questionaire/notice';
+import { NoticeScreen } from './screens/questionaire/noticescreen';
+import { QuestionOneScreen } from './screens/questionaire/q1screen';
+import { QuestionTwoScreen } from './screens/questionaire/q2screen';
+import { QuestionThreeScreen } from './screens/questionaire/q3screen';
+import { QuestionFourScreen } from './screens/questionaire/q4screen';
+import { QuestionFiveScreen } from './screens/questionaire/q5screen';
+import { QuestionSixScreen } from './screens/questionaire/q6screen';
+import { QuestionSevenScreen } from './screens/questionaire/q7screen';
+import { QuestionEightScreen } from './screens/questionaire/q8screen';
+import { QuestionNineScreen } from './screens/questionaire/q9screen';
+import { QuestionTenScreen } from './screens/questionaire/q10screen';
+import { QuestionElevenScreen } from './screens/questionaire/q11screen';
+import { QuestionTwelveScreen } from './screens/questionaire/q12screen';
+import { QuestionThirteenScreen } from './screens/questionaire/q13screen';
+import { FinishScreen } from './screens/questionaire/finishscreen';
+import { FinishPinayScreen } from './screens/finishpinayscreen';
+import { FinishPalScreen } from './screens/finishpalscreen';
+//import { InterestScreen } from './screens/interestscreen';
 //import * as SplashScreen from 'expo-splash-screen';
 
 export default function App() {
@@ -48,7 +65,7 @@ export default function App() {
 
   return (
     <GluestackUIProvider config={config} onLayoutRootView={onLayoutRootView}>
-        <RegistrationNavigationFlowScreen />
+        <FinishPalScreen/>
     </GluestackUIProvider>
   );
 }

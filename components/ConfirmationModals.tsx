@@ -15,7 +15,7 @@ export const ConfirmationModalProvider = ({children}) => {
             {children}
         </ConfirmationModalContext.Provider>
     );
-}
+}*/
 
 export const ConfirmationModal = ({display}) => {
     const {showConfirmationModal, closeConfirmationModal} = useConfirmationModal();

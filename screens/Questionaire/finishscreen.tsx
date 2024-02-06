@@ -8,7 +8,7 @@ import { verticalScale, horizontalScale } from "../../components/ScaleHelper";
 import { PrimaryButton, SecondaryButton } from "../../components/FormElements";
 
 
-export const NoticeScreen = () => {
+export const FinishScreen = () => {
     return (
         <SafeAreaView>
             <LinearGradient start={[0.6, 0.5]} end={[0.5, 1]} locations={[0, 0.7]} colors={['#ffb9c6', 'rgba(255, 255, 255, 0)']} >
@@ -20,7 +20,7 @@ export const NoticeScreen = () => {
                             </Center>
                             <Box flex={1} mt={verticalScale(50)} borderWidth={"$0"} >
                                 <Text textAlign="center" w={"100%"} >
-                                    <Text lineHeight={verticalScale(36)} fontSize={20} fontFamily='Poppins-SemiBold' color="#000000" >"This test is designed to help you find a partner who aligns well with your preferences. For the most accurate matching, please respond to the questions honestly."</Text>
+                                    <Text lineHeight={verticalScale(36)} fontSize={18} fontFamily='Poppins-SemiBold' color="#000000" >"You have successfully completed the partner matching test. We will now proceed to update our matching algorithm with the information gathered from your test results."</Text>
                                 </Text>
                             </Box>
                             <VStack alignSelf="center" w={"95%"} justifyContent="flex-end" mt={36}>
