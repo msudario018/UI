@@ -1,7 +1,7 @@
 import { Box, ButtonText, Center, Heading } from "@gluestack-ui/themed";
 import { Button, CloseIcon, Icon, Modal, ModalBackdrop, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, Text } from "@gluestack-ui/themed";
 import { createContext, useContext, useState } from "react";
-
+/*
 const ConfirmationModalContext = createContext({});
 export const useConfirmationModal = useContext(ConfirmationModalContext);
 export const ConfirmationModalProvider = ({children}) => {
@@ -15,7 +15,7 @@ export const ConfirmationModalProvider = ({children}) => {
             {children}
         </ConfirmationModalContext.Provider>
     );
-}
+}*/
 
 
 
