@@ -11,9 +11,9 @@ import { RegistrationStartScreen } from './registrationstartscreen';
 const Stack = createNativeStackNavigator();
 
 export const RegistrationNavigationFlowScreen = ({ navigation }) => {
-    return(
+    return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName='LocationEnableScreen' screenOptions={{headerShown: false}}>
+            <Stack.Navigator initialRouteName='LocationEnableScreen' screenOptions={{ headerShown: false }}>
                 <Stack.Screen name="LocationEnableScreen" component={LocationEnableScreen} />
                 <Stack.Screen name="NotificationEnableScreen" component={NotificationEnableScreen} />
                 <Stack.Screen name="RegistrationStartScreen" component={RegistrationStartScreen} />

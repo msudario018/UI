@@ -9,21 +9,22 @@ import { useEffect, useState } from "react";
 import * as Location from 'expo-location';
 import { GetUserCountryLocation, SetLocationPermissions } from "../../services/LocationService";
 
-const AllowLocationServicesButton = async () => {
-    let status = await SetLocationPermissions();
-
-
-    if (status !== Location.PermissionStatus.GRANTED) {
-        console.error('Permission to access location was denied');
-        return;
-    }
-
-    let location = await GetUserCountryLocation();
-    console.log(location);
-};
-
 
 export const LocationEnableScreen = ({ navigation }) => {
+
+    const AllowLocationServices = async () => {
+        let status = await SetLocationPermissions();
+
+        if (status !== Location.PermissionStatus.GRANTED) {
+            console.error('Permission to access location was denied');
+            return;
+        }
+
+        let location = await GetUserCountryLocation();
+        console.log(location);
+
+        navigation.navigate("NotificationEnableScreen");
+    };
 
     return (
         <SafeAreaView>
@@ -38,13 +39,10 @@ your location?`}</Text>
                     </Box>
                     <Box flex={1} justifyContent="flex-end" mt={36} borderWidth={"$0"} w={"100%"}>
                         <Box borderWidth={"$0"}>
-                            <PrimaryButton label={"Allow Location Services"} onPress={() => { 
-                                AllowLocationServicesButton();
-                                navigation.navigate("NotificationEnableScreen");
-                            }} />
+                            <PrimaryButton label={"Allow Location Services"} onPress={AllowLocationServices} />
                         </Box>
                         <Box mt={20} borderWidth={"$0"}>
-                            <SecondaryButton label={"Go Back"} onPress={() => { 
+                            <SecondaryButton label={"Go Back"} onPress={() => {
                                 navigation.goBack();
                             }} />
                         </Box>
