@@ -5,11 +5,10 @@ import { BellDotIcon, MapPinnedIcon } from "lucide-react-native";
 import { PrimaryButton, PrimaryInputBox, SecondaryButton } from "../../components/FormElements";
 import { verticalScale } from "../../components/ScaleHelper";
 import { PinayPalLogoAndTextWhite } from "../../components/AppIcon";
-import { ConfirmationModal } from "../../components/ConfirmationModals";
 import { useState } from "react";
 
 
-export const RegistrationStartScreen = () => {
+export const RegistrationStartScreen = ({ navigation }) => {
     const [showCancelConfirmModal, setShowCancelConfirmModal] = useState(false);
 
     return (
@@ -32,17 +31,18 @@ export const RegistrationStartScreen = () => {
                             </Text>
                         </Box>
                         <Box borderWidth={"$0"} mt={48}>
-                            <PrimaryButton label={"I'm Pal, looking for Pinays to Chat"} onPress={() => { }} />
+                            <PrimaryButton label={"I'm Pal, looking for Pinays to Chat"} onPress={() => { 
+                                navigation.navigate("MobileNumberScreen");
+                            }} />
                         </Box>
                         <Box mt={20} borderWidth={"$0"}>
                             <SecondaryButton label={"I'm contented for now"} onPress={() => { 
                                 console.log("cancel clicked!")
-                                setShowCancelConfirmModal(true)
+                                navigation.goBack();
                             }} />
                         </Box>
                     </Box>
-                </Box>
-                <ConfirmationModal display={showCancelConfirmModal}/>
+                </Box>               
             </LinearGradient>
         </SafeAreaView>
     );

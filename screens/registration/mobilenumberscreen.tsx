@@ -8,7 +8,7 @@ import { SelectContent } from "@gluestack-ui/themed";
 import { StyleSheet } from "react-native";
 
 
-export const MobileRegistrationScreen = () => {
+export const MobileRegistrationScreen = ({ navigation }) => {
     return (
         <SafeAreaView>
             <LinearGradient start={[0.6, 0.5]} end={[0.5, 1]} locations={[0, 0.7]} colors={['#ffb9c6', 'rgba(255, 255, 255, 0)']} >
@@ -55,10 +55,14 @@ export const MobileRegistrationScreen = () => {
                     </Box>
                     <Box flex={1} justifyContent="flex-end" borderWidth={"$0"} w={"100%"}>
                         <Box borderWidth={"$0"}>
-                            <PrimaryButton label={"Continue"} onPress={() => { }} />
+                            <PrimaryButton label={"Continue"} onPress={() => { 
+                                navigation.navigate("MobileNumberVerificationScreen");
+                            }} />
                         </Box>
                         <Box mt={20} borderWidth={"$0"}>
-                            <SecondaryButton label={"Go Back"} onPress={() => { }} />
+                            <SecondaryButton label={"Go Back"} onPress={() => { 
+                                navigation.goBack();
+                            }} />
                         </Box>
                     </Box>
                 </Box>

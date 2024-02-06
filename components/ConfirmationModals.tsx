@@ -3,7 +3,7 @@ import { Button, CloseIcon, Icon, Modal, ModalBackdrop, ModalBody, ModalCloseBut
 import { createContext, useContext, useState } from "react";
 /*
 const ConfirmationModalContext = createContext({});
-export const useConfirmationModal = useContext(ConfirmationModalContext);
+const useConfirmationModal = useContext(ConfirmationModalContext);
 export const ConfirmationModalProvider = ({children}) => {
     const [showConfirmationModal, setShowConfirmationModal] = useState(false);
 
@@ -16,8 +16,6 @@ export const ConfirmationModalProvider = ({children}) => {
         </ConfirmationModalContext.Provider>
     );
 }*/
-
-
 
 export const ConfirmationModal = ({display}) => {
     const {showConfirmationModal, closeConfirmationModal} = useConfirmationModal();
@@ -66,3 +64,4 @@ export const ConfirmationModal = ({display}) => {
         </Modal>
     );
 }
+*/

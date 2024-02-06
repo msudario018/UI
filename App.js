@@ -24,6 +24,7 @@ import { WelcomeScreenPinay } from './screens/welcomescreenpinay';
 import { FullNameScreen } from './screens/fullnamescreen';
 import { BirthDateScreen } from './screens/birthdatescreen';
 import { AboutYourselfScreen } from './screens/aboutyourselfscreen';
+import { RegistrationNavigationFlowScreen } from './screens/registration/registrationnavigationscreen';
 import { NoticeScreen } from './screens/questionaire/noticescreen';
 import { QuestionOneScreen } from './screens/questionaire/q1screen';
 import { QuestionTwoScreen } from './screens/questionaire/q2screen';

@@ -1,9 +1,8 @@
 import { Box, Center, SafeAreaView, VStack } from "@gluestack-ui/themed";
 import React from "react";
-//import LinearGradient from "react-native-linear-gradient";
 import { LinearGradient } from "expo-linear-gradient";
 import { horizontalScale, verticalScale } from "../components/ScaleHelper";
-import { HeartsBG, PinayPalLogoAndTextWhite } from "../components/AppIcon";
+import { PinayPalLogoAndTextWhite } from "../components/AppIcon";
 import { PrimaryButton, SecondaryButton } from "../components/FormElements";
 
 

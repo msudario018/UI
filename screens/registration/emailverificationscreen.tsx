@@ -9,7 +9,7 @@ import { SelectContent } from "@gluestack-ui/themed";
 import { Keyboard, StyleSheet, TouchableWithoutFeedback } from "react-native";
 
 
-export const EmailRegistrationVerificationScreen = () => {
+export const EmailRegistrationVerificationScreen = ({ navigation }) => {
     return (
         <SafeAreaView>
             <LinearGradient start={[0.6, 0.5]} end={[0.5, 1]} locations={[0, 0.7]} colors={['#ffb9c6', 'rgba(255, 255, 255, 0)']} >
@@ -24,7 +24,9 @@ export const EmailRegistrationVerificationScreen = () => {
                         </Box>
                         <Box flex={1} justifyContent="flex-end" borderWidth={"$0"} w={"100%"}>
                             <Box borderWidth={"$0"}>
-                                <PrimaryButton label={"Finish Registration"} onPress={() => { }} />
+                                <PrimaryButton label={"Finish Registration"} onPress={() => { 
+                                    
+                                }} />
                             </Box>
                         </Box>
                     </Box>
