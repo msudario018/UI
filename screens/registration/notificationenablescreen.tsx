@@ -6,7 +6,7 @@ import { PrimaryButton, SecondaryButton } from "../../components/FormElements";
 import { verticalScale } from "../../components/ScaleHelper";
 
 
-export const NotificationEnableScreen = () => {
+export const NotificationEnableScreen = ({ navigation }) => {
     return (
         <SafeAreaView>
             <LinearGradient start={[0.6, 0.5]} end={[0.5, 1]} locations={[0, 0.7]} colors={['#ffb9c6', 'rgba(255, 255, 255, 0)']} >
@@ -20,10 +20,14 @@ you notifications?`}</Text>
                     </Box>
                     <Box flex={1} justifyContent="flex-end" mt={36} borderWidth={"$0"} w={"100%"}>
                         <Box borderWidth={"$0"}>
-                            <PrimaryButton label={"Allow Notifications"} onPress={() => { }} />
+                            <PrimaryButton label={"Allow Notifications"} onPress={() => { 
+                                navigation.navigate("RegistrationStartScreen");
+                            }} />
                         </Box>
                         <Box mt={20} borderWidth={"$0"}>
-                            <SecondaryButton label={"Go Back"} onPress={() => { }} />
+                            <SecondaryButton label={"Go Back"} onPress={() => {
+                                navigation.goBack();
+                             }} />
                         </Box>
                     </Box>
                 </Box>

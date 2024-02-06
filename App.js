@@ -24,6 +24,7 @@ import { WelcomeScreenPinay } from './screens/welcomescreenpinay';
 import { FullNameScreen } from './screens/fullnamescreen';
 import { BirthDateScreen } from './screens/birthdatescreen';
 import { AboutYourselfScreen } from './screens/aboutyourselfscreen';
+import { RegistrationNavigationFlowScreen } from './screens/registration/registrationnavigationscreen';
 //import * as SplashScreen from 'expo-splash-screen';
 
 export default function App() {
@@ -46,7 +47,7 @@ export default function App() {
 
   return (
     <GluestackUIProvider config={config} onLayoutRootView={onLayoutRootView}>
-        <NoticeScreen/>
+        <RegistrationNavigationFlowScreen />
     </GluestackUIProvider>
   );
 }

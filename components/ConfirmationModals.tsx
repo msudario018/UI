@@ -1,9 +1,9 @@
 import { Box, ButtonText, Center, Heading } from "@gluestack-ui/themed";
 import { Button, CloseIcon, Icon, Modal, ModalBackdrop, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, Text } from "@gluestack-ui/themed";
 import { createContext, useContext, useState } from "react";
-
+/*
 const ConfirmationModalContext = createContext({});
-export const useConfirmationModal = useContext(ConfirmationModalContext);
+const useConfirmationModal = useContext(ConfirmationModalContext);
 export const ConfirmationModalProvider = ({children}) => {
     const [showConfirmationModal, setShowConfirmationModal] = useState(false);
 
@@ -16,8 +16,6 @@ export const ConfirmationModalProvider = ({children}) => {
         </ConfirmationModalContext.Provider>
     );
 }
-
-
 
 export const ConfirmationModal = ({display}) => {
     const {showConfirmationModal, closeConfirmationModal} = useConfirmationModal();
@@ -66,3 +64,4 @@ export const ConfirmationModal = ({display}) => {
         </Modal>
     );
 }
+*/
