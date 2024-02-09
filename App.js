@@ -42,6 +42,8 @@ import { QuestionThirteenScreen } from './screens/questionaire/q13screen';
 import { FinishScreen } from './screens/questionaire/finishscreen';
 import { FinishPinayScreen } from './screens/finishpinayscreen';
 import { FinishPalScreen } from './screens/finishpalscreen';
+import { QuestionaireNavigationFlowScreen } from './screens/questionaire/questionairenavigationscreen';
+//import MainPageAndroidScreen from './screens/mainpageandroidscreen';
 //import { InterestScreen } from './screens/interestscreen';
 //import * as SplashScreen from 'expo-splash-screen';
 
@@ -65,7 +67,7 @@ export default function App() {
 
   return (
     <GluestackUIProvider config={config} onLayoutRootView={onLayoutRootView}>
-        <FinishPalScreen/>
+        <QuestionaireNavigationFlowScreen/>
     </GluestackUIProvider>
   );
 }

@@ -1,14 +1,13 @@
 import { LinearGradient } from "expo-linear-gradient";
-import { Box, Center, Input, InputField, InputIcon, InputSlot, KeyboardAvoidingView, SafeAreaView, Text, VStack, styled } from "@gluestack-ui/themed";
-import { HeartsBG, PinayPalLogoAndTextWhite, PinayPalLogoWhite } from "../../components/AppIcon";
+import { Box, Center, KeyboardAvoidingView, SafeAreaView, Text, VStack } from "@gluestack-ui/themed";
+import { PinayPalLogoAndTextWhite } from "../../components/AppIcon";
 
-import { SelectContent, Progress, ProgressFilledTrack } from "@gluestack-ui/themed";
-import { Keyboard, StyleSheet, View, Image, TouchableWithoutFeedback } from "react-native";
-import { verticalScale, horizontalScale } from "../../components/ScaleHelper";
+import { Keyboard, TouchableWithoutFeedback } from "react-native";
+import { verticalScale } from "../../components/ScaleHelper";
 import { PrimaryButton, SecondaryButton } from "../../components/FormElements";
 
 
-export const FinishScreen = () => {
+export const FinishScreen = ({navigation}) => {
     return (
         <SafeAreaView>
             <LinearGradient start={[0.6, 0.5]} end={[0.5, 1]} locations={[0, 0.7]} colors={['#ffb9c6', 'rgba(255, 255, 255, 0)']} >
@@ -25,10 +24,10 @@ export const FinishScreen = () => {
                             </Box>
                             <VStack alignSelf="center" w={"95%"} justifyContent="flex-end" mt={36}>
                                 <Box m={verticalScale(8)}>
-                                    <PrimaryButton label="Start" onPress={() => { console.log("Test 1") }} />
+                                    <PrimaryButton label="Finish" onPress={() => { console.log("Test 1") }} />
                                 </Box>
                                 <Box m={verticalScale(8)}>
-                                    <SecondaryButton label="Cancel" onPress={() => { console.log("Test 2") }} />
+                                    <SecondaryButton label="Cancel" onPress={() => {navigation.navigate("QuestionThirteenScreen")}} />
                                 </Box>
                             </VStack>
                         </Box>

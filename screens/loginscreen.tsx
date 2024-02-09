@@ -5,7 +5,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { horizontalScale, verticalScale } from "../components/ScaleHelper";
 import { HeartsBG, PinayPalLogoAndTextWhite, PinayPalLogoWhite } from "../components/AppIcon";
 import { PrimaryButton, SecondaryButton } from "../components/FormElements";
-import { Keyboard, Platform, TouchableWithoutFeedback } from "react-native";
+import { Keyboard, Platform, TouchableWithoutFeedback,  } from "react-native";
 import { EyeIcon, EyeOffIcon } from "lucide-react-native";
 
 
@@ -58,7 +58,7 @@ const LoginScreen = () => {
                                 <Box m={verticalScale(8)}>
                                     <PrimaryButton label="Login" onPress={() => { console.log("Test 1") }} />
                                 </Box>
-                                <Box m={verticalScale(8)}>
+                                <Box m={verticalScale(8)}>  
                                     <SecondaryButton label="Back" onPress={() => { console.log("Test 2") }} />
                                 </Box>
                             </VStack>

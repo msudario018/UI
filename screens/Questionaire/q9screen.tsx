@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { LinearGradient } from "expo-linear-gradient";
-import { SafeAreaView, StyleSheet, TouchableWithoutFeedback, Keyboard, View, Pressable, } from "react-native";
-import { Box, Text, ButtonGroup, Button, HStack } from "@gluestack-ui/themed";
+import { SafeAreaView, TouchableWithoutFeedback, Keyboard, } from "react-native";
+import { Box, Text, Button, HStack } from "@gluestack-ui/themed";
 import { verticalScale, horizontalScale } from "../../components/ScaleHelper";
 import { PinayPalLogoAndTextWhite } from "../../components/AppIcon";
 
-export const QuestionNineScreen = () => {
+export const QuestionNineScreen = ({navigation}) => {
 
     return (
         <SafeAreaView>
@@ -29,14 +29,16 @@ export const QuestionNineScreen = () => {
                         </Box>
                         <HStack alignSelf="center" py={horizontalScale(50)} px={verticalScale(50)}>
                             <Box m={verticalScale(8)} width={horizontalScale(150)}>
-                                <Button bgColor="rgba(255, 255, 255, 1)" alignContent="center" borderRadius="$full" height={verticalScale(60)}>
+                                <Button bgColor="rgba(255, 255, 255, 1)" alignContent="center" borderRadius="$full" height={verticalScale(60)}
+                                onPress={() => {navigation.goBack()}} >
                                     <Text textAlign="center" w={"100%"} >
                                         <Text lineHeight={verticalScale(36)} fontSize={20} fontFamily='Poppins-Regular' color="#000000" >Back</Text>
                                     </Text>
                                 </Button>
                             </Box>
                             <Box m={verticalScale(8)} width={horizontalScale(150)}>
-                                <Button bgColor="rgba(255, 185, 198, 0.5)" alignContent="center" borderRadius="$full" height={verticalScale(60)}>
+                                <Button bgColor="rgba(255, 185, 198, 0.5)" alignContent="center" borderRadius="$full" height={verticalScale(60)}
+                                onPress={() => {navigation.navigate("QuestionTenScreen")}}>
                                     <Text textAlign="center" w={"100%"} >
                                         <Text lineHeight={verticalScale(36)} fontSize={20} fontFamily='Poppins-Regular' color="#000000" >Next</Text>
                                     </Text>
